@@ -1,0 +1,11 @@
+*
+!.mutt
+!.mutt/*
+!.muttrc
+!.vim
+!.vim/*
+!.vimrc
+!.gitconfig
+!.tmux.conf
+!.Xresources
+!.gitignore
