@@ -1,9 +1,11 @@
 *
 !.mutt
 !.mutt/*
+!.mutt/**/*
 !.muttrc
 !.vim
 !.vim/*
+!.vim/**/*
 !.vimrc
 !.gitconfig
 !.tmux.conf
