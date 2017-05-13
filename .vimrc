@@ -18,7 +18,7 @@ let mapleader = ','
 
 set ttymouse=xterm2
 set nocompatible
-colorscheme jellybeans
+silent! colorscheme jellybeans
 autocmd!
 set nocp
 syntax on
