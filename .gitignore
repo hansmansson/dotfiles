@@ -8,6 +8,9 @@
 !.vim/**/*
 !.vimrc
 !.gitconfig
+!.tmux
+!.tmux/*
+!.tmux/**/*
 !.tmux.conf
 !.Xresources
 !.gitignore
