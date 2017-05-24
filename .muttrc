@@ -1,74 +1,51 @@
 ## Basic configuration
+set realname = "Hans Månsson"
+set mbox_type = Maildir
+set folder = "~/mail/"
+set timeout = 15
+set use_from = yes
+set envelope_from = yes
 
-source "~/.mutt/user"
+mailboxes `find ~/mail/ -type d -name cur -printf '"%h" '`
+source ~/.mutt/accounts/work
 
-# IMAP config
-set imap_user="$my_username@$my_domain"
-set imap_pass=$my_password
-
-set imap_authenticators="login"
-set folder = "imaps://$my_imap_server"
-set spoolfile = +INBOX
-set postponed = +Drafts
-set record = +"Sent Items"
-set trash = +Trash
-mailboxes +INBOX +"Sent Items" +Drafts +Trash
-
-set imap_check_subscribed="yes"
-#set imap_list_subscribed="yes"
-set timeout=15
-set mail_check=90
-set imap_keepalive=30
-set imap_idle
-unset imap_passive
-unset mark_old
-set charset="utf-8"
-
-# SMTP config
-set realname = "$my_name"
-set from = "$my_username@$my_domain"
-set smtp_pass = "$my_password"
-set smtp_url = "smtp://$my_username@$my_domain@$my_smtp_server"
-set ssl_force_tls = yes
-set smtp_authenticators = "login"
-
-# File storage settings
-set message_cachedir="~/.mutt/message_cache"
-set header_cache="~/.mutt/header_cache"
-set tmpdir="~/.mutt/tmp"
+folder-hook work/* source ~/.mutt/accounts/work
 
 # Text view first
-set mailcap_path 	= ~/.mutt/mailcap
+set mailcap_path = "~/.mutt/mailcap"
+set pager_stop = yes
+set smart_wrap = yes
+set reverse_name = yes
+set reverse_realname = yes
+set charset = "utf-8"
+set markers = no
+set pager_index_lines = 10
+
 ignore *
 unignore From To Reply-To Subject X-Mailer Cc Date
 hdr_order From: Date: To: Cc: Subject
-set pager_stop="yes"
-set smart_wrap="yes"
 alternative_order text/plain
 auto_view text/html
-set reverse_name=yes
-set reverse_realname=yes
+unset mark_old
 
 # Text editor
-set editor='vim -c "set textwidth=72" -c "set wrap" -c "set nocp"'
+set editor = 'vim -c "set textwidth=72" -c "set wrap" -c "set nocp"'
 
 # Adress book handling
-set sort_alias=alias
-set reverse_alias=yes
-set alias_file="~/.mutt/aliases"
+set sort_alias = alias
+set reverse_alias = yes
+set alias_file = "~/.mutt/aliases"
 
 # Thread ordering
 set sort = 'threads'
-set sort_browser="reverse-date"
-set sort_aux="last-date-received"
+set sort_browser = "reverse-date"
+set sort_aux = "last-date-received"
+set date_format = "%Y-%m-%d %T"
+set index_format = " %4C %-4.4Z %-25.25D %-40.40L %s"
+
 unset collapse_unread
-set date_format="%Y-%m-%d %T"
-set index_format=" %4C %-4.4Z %-25.25D %-40.40L %s"
 
 ## Key bindings
-
-# Mailboxes
-bind    index   g  group-reply
 
 # Index
 bind    index   C  noop
@@ -106,7 +83,3 @@ color   quoted5     cyan         default
 color   quoted6     green        default
 color   quoted7     brightcyan   default
 color   quoted8     brightgreen  default
-
-# For better looks
-set markers=no # don't put '+' at the beginning of wrapped lines
-set pager_index_lines = 10  # how large is the index window?
