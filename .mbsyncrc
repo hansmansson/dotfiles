@@ -1,0 +1,21 @@
+IMAPAccount work
+Host
+User
+PassCmd "gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.mailpwd.gpg"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore work-remote
+Account work
+
+MaildirStore work-local
+Path ~/mail/work/
+Inbox ~/mail/work/Inbox
+
+Channel work
+Master :work-remote:
+Slave :work-local:
+Patterns *
+Create Both
+Expunge Both
+SyncState *
