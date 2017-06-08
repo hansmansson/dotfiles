@@ -2,6 +2,7 @@ set from =
 
 set sendmail = "/usr/bin/msmtp -a work"
 
-set spoolfile = "+work/Inbox"
-set record = "+work/Sent Items"
-set postponed = "+work/Drafts"
+set folder = "~/mail/work"
+set spoolfile = "+Inbox"
+set record = "+Sent Items"
+set postponed = "+Drafts"

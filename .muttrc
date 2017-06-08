@@ -1,7 +1,6 @@
 ## Basic configuration
 set realname = "Hans Månsson"
 set mbox_type = Maildir
-set folder = "~/mail/"
 set timeout = 15
 set use_from = yes
 set envelope_from = yes
