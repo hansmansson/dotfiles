@@ -51,3 +51,12 @@ URxvt*scrollstyle:plain
 URxvt*scrollBar: false
 URxvt*cursorBlink: false
 URxvt*cursorUnderline: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
