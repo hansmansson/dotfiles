@@ -14,7 +14,7 @@ Plug 'bogado/file-line'
 
 call plug#end()
 
-let mapleader = ','
+map <space> <leader>
 
 set ttymouse=xterm2
 set nocompatible
