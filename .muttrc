@@ -54,7 +54,7 @@ bind    index   _  collapse-all
 # Pager
 bind    pager   k   previous-line
 bind    pager   j   next-line
-macro   pager   \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+macro   pager   \cb "<pipe-message> urlscan -c <Enter>" "call urlscan to extract URLs out of a message"
 
 # Colors
 color   normal      white        color233
