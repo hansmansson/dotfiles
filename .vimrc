@@ -9,7 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 Plug 'bogado/file-line'
 
 call plug#end()
@@ -83,3 +83,7 @@ noremap <silent><Leader>* :nohls<CR>
 set colorcolumn=80
 
 nmap <silent> <c-p> :FZF<CR>
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
