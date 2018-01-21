@@ -1,0 +1,6 @@
+EDITOR          DEFAULT=vim
+PAGER           DEFAULT=less
+LESS            DEFAULT=-Ri
+
+SSH_AGENT_PID   DEFAULT=
+SSH_AUTH_SOCK   DEFAULT="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
