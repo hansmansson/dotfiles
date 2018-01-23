@@ -1,4 +1,6 @@
 *
+!.gnupg
+!.gnupg/gpg-agent.conf
 !.pam_environment
 !.mutt
 !.mutt/*
