@@ -43,7 +43,7 @@ URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true
 
 
 !urxvt extensions:
-URxvt.perl-ext-common:  default,matcher,selection-to-clipboard
+URxvt.perl-ext-common:  default,matcher,selection-to-clipboard,font-size/font-size
 
 !urxvt scrolling options and cursor style:
 URxvt*saveLines: 12000

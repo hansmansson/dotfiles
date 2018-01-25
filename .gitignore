@@ -1,4 +1,7 @@
 *
+!.urxvt
+!.urxvt/*
+!.urxvt/**/*
 !.gnupg
 !.gnupg/gpg-agent.conf
 !.pam_environment

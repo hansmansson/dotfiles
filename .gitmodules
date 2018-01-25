@@ -4,3 +4,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule ".urxvt/ext/font-size"]
+	path = .urxvt/ext/font-size
+	url = https://github.com/majutsushi/urxvt-font-size
