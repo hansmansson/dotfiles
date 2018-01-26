@@ -1,0 +1,4 @@
+.gitconfig filter=wash-gitconfig
+.mutt/accounts/work filter=wash-email
+.mbsyncrc filter=wash-email
+.msmtprc filter=wash-email

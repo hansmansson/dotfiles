@@ -1,6 +1,6 @@
 [user]
  name = Hans Månsson
- email =
+ email = username@domain.com
 [color]
  ui = auto
 [merge]
@@ -13,6 +13,11 @@
  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
  editor = vim
  #pager=
+[filter "wash-email"]
+ clean = sed 's/[^@ ]*@[^@]*\\.[^@ ]*/username@domain.com/g'
+[filter "wash-gitconfig"]
+  clean = sed -e '/^\\[user]/,/^\\[/{s/\\(.*email[[:space:]]*=\\).*/\\1 username@domain.com/}' \
+              -e '/^\\[user]/,/^\\[/{/signingkey/d}'
 [alias]
  st = status
  ci = commit
