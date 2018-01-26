@@ -1,7 +1,7 @@
 IMAPAccount work
-Host
-User
-PassCmd "gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.mailpwd.gpg"
+Host outlook.office365.com
+User username@domain.com
+PassCmd "pass show username@domain.com 2>/dev/null"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
