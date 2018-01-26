@@ -1,4 +1,4 @@
-set from =
+set from = username@domain.com
 
 set sendmail = "/usr/bin/msmtp -a work"
 
