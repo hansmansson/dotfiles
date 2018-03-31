@@ -1,6 +1,6 @@
 EDITOR          DEFAULT=vim
 PAGER           DEFAULT=less
-LESS            DEFAULT=-Ri
+LESS            DEFAULT=-RiF
 TERM            DEFAULT=xterm-256color
 
 SSH_AGENT_PID   DEFAULT=
