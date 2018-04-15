@@ -8,7 +8,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'mileszs/ack.vim'
 Plug 'bogado/file-line'
 
 call plug#end()
