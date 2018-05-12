@@ -50,6 +50,7 @@ unset collapse_unread
 bind    index   C  noop
 bind    index   -  collapse-thread
 bind    index   _  collapse-all
+bind    index   N  search-opposite
 
 # Pager
 bind    pager   k   previous-line
