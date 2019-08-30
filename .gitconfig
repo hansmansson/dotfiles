@@ -19,7 +19,7 @@
   clean = sed -e '/^\\[user]/,/^\\[/{s/\\(.*email[[:space:]]*=\\).*/\\1 username@domain.com/}' \
               -e '/^\\[user]/,/^\\[/{/signingkey/d}'
 [alias]
- st = status
+ st = status -s
  ci = commit
  br = branch
  co = checkout
