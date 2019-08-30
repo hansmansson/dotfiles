@@ -23,6 +23,7 @@
  ci = commit
  br = branch
  co = checkout
+ cp = cherry-pick
  df = diff --cached
  dif = diff
  lg = log -p
