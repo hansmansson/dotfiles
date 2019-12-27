@@ -31,3 +31,5 @@
  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
  ls = ls-files
  gr = !git grep
+[sendemail]
+  smtpserver = /usr/bin/msmtp -a work
